@@ -1,0 +1,46 @@
+
+.youtube-top-navbar {
+  position: fixed;
+  margin-left: 20px;
+  height: 50px;
+  right: 10px;
+  left: 72px; /* Make it stretch from left to right */
+  top: 70px;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent buttons from wrapping to the next line */
+  background-color: rgb(0, 0, 0);
+  padding-left: 10px; /* Add some padding to the left */
+  display: flex; /* Align buttons in a row */
+  align-items: center; /* Center the buttons vertically within the nav */
+}
+
+.youtube-top-navbar button {
+  color: #fff;
+  font-weight: 600;
+  background-color: rgb(50, 50, 50); /* Add background color for button contrast */
+  margin-right: 8px; /* Space between buttons */
+  border: none;
+  padding: 6px 12px; /* Adjust padding for the button size */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 1px 12px 1px 0;
+}
+
+.youtube-top-navbar button:hover {
+  background-color: rgb(212, 72, 72); /* Change background on hover */
+}
+
+/* Optional: Add a custom scrollbar */
+.youtube-top-navbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.youtube-top-navbar::-webkit-scrollbar-thumb {
+  background-color: rgb(80, 80, 80); /* Dark scrollbar */
+  border-radius: 10px;
+}
+
+.youtube-top-navbar::-webkit-scrollbar-track {
+  background-color: rgb(40, 40, 40); /* Track background */
+}

@@ -1,0 +1,155 @@
+.header{
+  position: fixed;
+  height: 70px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.left-section{
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.left-section img{
+  height: 24px;
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+.middle-section{
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+}
+.search-bar{
+  font-size: 16px;
+  color: #fff;
+  height: 36px;
+  width: 0;
+  padding-left: 10px;
+  border: 1px solid rgba(113, 113, 113, 0.4);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  background-color: black;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  flex: 1;
+  transition: border 0.3s ease;
+ padding-left: 20px;
+}
+
+input:focus{
+  border-color: rgb(12, 12, 178);
+  border-width: 1px;
+  outline: none;
+  box-shadow: inset 1px 1px 4px rgba(96, 96, 96, 0.7);
+}
+
+.input::placeholder{
+  margin-left: 80px;
+}
+
+.search-icon-button{
+  height: 40px;
+  width: 60px;
+  border: 1px solid rgba(65, 64, 64, 0.4);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.search-icon-button,
+.voice-icon-button,
+.upload-icon-container,
+.notification-icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search-icon-button .tooltip,
+.voice-icon-button .tooltip,
+.upload-icon-container .tooltip,
+.notification-icon-container .tooltip{
+  position: absolute;
+  background-color: rgba(96, 95, 95, 0.9);
+  color: #fff;
+  white-space: nowrap;
+  padding: 10px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  bottom: -60px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.search-icon-button:hover .tooltip,
+.voice-icon-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
+.voice-icon{
+  height: 24px;
+  color:#fff;
+}
+
+.voice-icon-button{
+  margin-left: 1px;
+  width: 44px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.right-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+  margin-right: 20px;
+  margin-left: 32px;
+  flex-shrink: 0;
+}
+
+.camera-icon{
+  height: 16px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.notification-icon{
+  height: 28px;
+}
+
+.notification-icon-container{
+  position: relative;
+  cursor: pointer;
+}
+
+.notification-count{
+  font-size: 14px;
+  position: absolute;
+  background-color: rgb(139, 7, 7);
+  padding: 1px 5px;
+  border-radius: 10px;
+  top: -4px;
+  right: -5px;
+}
+
+.offset-image{
+  height: 36px;
+  border-radius: 24px;
+  cursor: pointer;
+}
